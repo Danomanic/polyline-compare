@@ -18,7 +18,7 @@ hills.forEach(hill => {
     const isLocationOnPath = PolyUtil.isLocationOnEdge({ lat: latitude, lng: longitude }, decodedPolyline, 250, false);
 
     if (isLocationOnPath) {
-        console.log(`Hill: ${hill.name} is on the edge: ${isLocationOnPath} ${hill.county}`);
+        console.log(`${hill.name} ${hill.county} is on the Strava Activity`);
     }
 
 });
