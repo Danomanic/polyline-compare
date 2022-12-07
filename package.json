@@ -1,0 +1,12 @@
+{
+  "name": "polyline-compare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Danomanic/polyline-compare.git",
+  "author": "Danomanic <daniel.pomfret@googlemail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@mapbox/polyline": "^1.1.1",
+    "node-geometry-library": "^1.2.6"
+  }
+}
