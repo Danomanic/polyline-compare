@@ -15,11 +15,10 @@ hills.forEach(hill => {
     const { longitude, latitude } = hill;
 
     // Check isLocationOnPath
-    const isLocationOnPath = PolyUtil.isLocationOnPath({ lat: latitude, lng: longitude }, decodedPolyline, 250, false);
+    const isLocationOnPath = PolyUtil.isLocationOnEdge({ lat: latitude, lng: longitude }, decodedPolyline, 250, false);
 
     if (isLocationOnPath) {
-        console.log(`Hill: ${hill.name} is on the edge: ${isLocationOnPath} `);
-        console.log(hill.type)
+        console.log(`Hill: ${hill.name} is on the edge: ${isLocationOnPath} ${hill.county}`);
     }
 
 });
